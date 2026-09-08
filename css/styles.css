@@ -1,0 +1,1606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+}
+
+header {
+  color: #4a90e2;
+  padding: 0; /* Increased padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-bottom: 2px solid rgba(74, 144, 226, 0.5); /* Border at the bottom */
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center; /* Center the text */
+  font-size: 2em; /* Default font size */
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4a90e2;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Default margin for small screens */
+.margin {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.palestrante-card {
+  /* background: radial-gradient(circle, rgb(17, 17, 16) 10%, rgb(65, 60, 49) 75%, rgb(240, 225, 91) 100%); */
+  /* background: linear-gradient(to bottom, #23283d 1%, #0f0f0f 55%);  */
+  /* background: linear-gradient(to bottom, #212530 40%, #131314 55%);  */
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66;
+  /* background: linear-gradient(to bottom, #293147 40%, #131314 55%); */
+  border: 0px inset #797876;
+  /* box-shadow: inset 0 0 1px #eeb804; */
+  /* box-shadow: inset 0 0px 2px #e2be4a; */
+  /* box-shadow: 0 0 1px #ff7eb6;  */
+  /* box-shadow: 0 0 2px #be95ff; */
+}
+p {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.nome_palestrante_linkedin_icone img {
+  opacity: 55%;
+}
+.nome_palestrante_linkedin_icone img:hover {
+  opacity: 100%;
+}
+/* Medium screens */
+@media (min-width: 768px) {
+  .margin {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .margin {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1440px) {
+  .margin {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+
+.descricao {
+  text-align: center;
+  margin: 20px 0; /* Add vertical space between text blocks */
+  color: #ffffff; /* Dark grey text */
+  padding: 10px 0; /* Add some padding inside the text block */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  border-bottom: 1px solid rgba(74, 144, 226, 0.5); /* 50% opacity */
+}
+
+#formulario-inscricao {
+  padding-top: 1vw;
+  margin: 3vw;
+  margin-top: 0;
+}
+.instagram_div {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.instagram_div img {
+  height: auto;
+  width: 5vw;
+}
+
+.instagram_div p {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#organizadores {
+  font-size:0.9em;
+  padding: 40px 20px;
+}
+
+#organizadores h2 {
+  font-size: 2.5em; /* Increase the font size of the heading */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#organizadores ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#organizadores ul li {
+  background-color: #2c2c2c;
+  padding: 15px; /* Increase padding for better spacing */
+  margin-bottom: 15px; /* Increase margin for better spacing */
+  border-radius: 5px;
+  font-size: 1.2em; /* Increase font size for the organizers' names */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#organizadores ul li a img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 10px; /* Add some space between the name and the icon */
+}
+
+
+#fale-conosco {
+  text-align: center; /* Center the text */
+  padding: 20px; /* Add some padding for better spacing */
+  margin: 20px 0; /* Add vertical margin for separation */
+}
+
+#fale-conosco p {
+  margin-bottom: 10px; /* Add some space between paragraphs */
+}
+
+#fale-conosco a {
+  color: #4a90e2; /* Ensure the link color matches your theme */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+#fale-conosco a:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+p, ul {
+  margin-bottom: 20px;
+}
+
+#imagem-evento {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 3%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  width: 100%;
+  height: 100%;       
+}
+
+#imagem-evento img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background-color: #2c2c2c;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ul li strong {
+  color: #4a90e2;
+}
+
+a {
+  color: #4a90e2;
+}
+
+
+.palestrante-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.palestrante-card img {
+  border-radius: 1%;
+  margin-right: 20px;
+}
+
+
+.palestrante-card .info-palestrante h3 {
+  color: #4a90e2;
+}
+
+footer {
+  color: #e5e5e5;
+  padding: 30px 0; /* Increased padding */
+  text-align: center;
+  border-top: 2px solid #4a90e2; /* Border at the top */
+}
+
+#form-inscricao {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  
+}
+
+#form-inscricao label,#form-inscricao input {
+  margin-bottom: 10px;
+}
+
+#form-inscricao input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4a90e2;
+  background-color: #2c2c2c;
+  color: #e5e5e5;
+}
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 15px 30px; /* Increase padding for a bigger button */
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%; /* Button occupies 100% of the form width */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+footer {
+  color: #e5e5e5; /* Ensure the text color matches your theme */
+  padding: 5%; /* Reduce padding for a smaller footer */
+  padding-bottom: 5%;
+  text-align: center; /* Center the text */
+  font-size: 0.4em; /* Make the text smaller */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+.lang-switcher{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  position:absolute;
+  top: 2px;
+  right: 2px;
+  text-decoration: none;
+  align-items: center;
+}
+.lang-switcher p {
+  line-height: 2vw;
+  text-decoration: none;
+  font-size: clamp(16px, 3vw, 30px);
+  margin: 0;
+  padding: 0px;
+  color: #eff1f3;
+}
+.lang-switcher img{
+  width: clamp(30px, 5vw, 50px);
+  height: auto;
+ 
+
+  padding: 0px; /* Adds padding to make it easier to click on mobile */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.lang-switcher img:hover {
+  box-shadow: inset 0 0 30px 1px #d396d0;
+}
+
+#sponsored-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sponsored-img {
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+}
+
+#ultimo {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.palestra-card{
+  padding: 2vw 3vw;
+  box-shadow: inset 0 0 0px 0px #a8a7a0;
+  border-bottom: 1px solid #384052;
+  border-left: 7px solid #44648d;
+  border-radius: 0;
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cronograma_mobile {
+  margin-top: 3vw;
+  padding: 1vw 4vw;
+}
+.cronograma_mobile h2 {
+  font-size: clamp(1px, 9vw, 4em);
+  margin-top: 4vw;
+}
+.day {
+  
+  border-bottom: 1px solid rgba(74, 75, 80, 0.5);
+  padding: clamp(1em,5vw,3em) 0;
+  margin: 0vw 0;
+}
+.day h3 {
+  font-size: clamp(1px, 5vw, 2.5em);
+  font-weight: normal;
+  color: #ffffff;
+}
+.day a {
+  text-decoration:none;
+  border-bottom: 1px;
+}
+.palestra-card h4 {
+  font-weight: normal;
+  font-size: clamp(1px, 4.5vw, 3em);
+}
+.palestra-card {
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1vw 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+  
+}
+.palestra-card h5 {
+  font-weight:normal;
+  text-align: center;
+  font-size: clamp(1px, 4.5vw, 3em);
+  color: #ffffff;
+}
+
+.palestra-card p{
+  color:#B8D7FA;
+  text-align: center;
+  font-style: italic;
+  font-size: clamp(1px, 3vw, 2em);
+  margin: 0;
+}
+
+.palestra-card a:hover{
+  color:#5ba6fc;
+}
+
+
+#ver_palestra {
+  text-align:center;
+}
+
+#Esquenta_pal{
+  padding-top: 1vw;
+}
+
+.cronograma_desktop{
+  display:none;
+}
+.cronograma_desktop_sabado{
+  display: none;
+}
+#ver_palestra{
+  display:block;
+}
+
+.cronograma_mobile{
+  display: block;
+}
+
+#voltar_cronograma{
+  display:none;
+}
+/* Media Queries for responsiveness */
+@media (min-width: 30px) {
+  body {
+    padding-top: 3%;
+    padding-left: .5%;
+    padding-right: .5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust font size for small screens */
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  ul {
+    padding-left: 40px;
+  }
+
+  p {
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+  }
+  button {
+    font-size: 1.1em; /* Adjust font size for small screens */
+  }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores {
+    font-size: .6em;
+    
+  }
+  .lang-switcher {
+    top: 3px; /* Less spacing on smaller screens */
+    right: 3px;
+    font-size: 14px; /* Slightly smaller text */
+    padding: 1px 4px; /* Adjust padding */
+  }
+
+  .organizador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    background-color: #2c2c2c;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: calc(50% - 20px); /* Ensures each item takes up half of the container */
+    box-sizing: border-box; /* Includes padding and borders in width calculations */
+    margin-bottom: 1px; /* Optional: adds spacing between rows */
+
+  }
+  .organizadores-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the items to wrap */
+    gap: 5px; /* Space between items */
+    justify-content: center; /* Centers items in the middle */
+  }
+  
+  .organizador p {
+    margin: 0; /* Removes default margins to ensure proper alignment */
+    margin-left:.5em;
+    line-height: 1.5; /* Adjusts the line height to center text better */
+}
+
+.palestrantes {
+  padding: 0 1em;
+}
+.palestrantes h2 {
+  font-size: 9vw;
+}
+.palestrantes h3 {
+  font-size: 7vw;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  
+}
+.palestrantes p {
+  margin: .5em;
+  font-size: 3vw;
+}
+.palestrante-card {
+  flex-direction: column;
+}
+.palestrante-card img {
+  margin-right: 0;
+}
+.info-palestrante {
+  padding: 0;
+  padding-top: 1vw;
+}
+.palestrante-name-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.palestrante-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}	
+
+
+.linkedin {
+    margin: 0; /* Adds space between the text and icon */
+    margin-left: .4em;
+    width: 2.1em; /* Adjust size based on preference */
+    height: auto; /* Maintains aspect ratio */
+}
+.nome_palestrante_linkedin_icone {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0;
+}
+.nome_palestrante_linkedin_icone img {
+  width: 8vw;
+  min-width: 1.8em;
+  height: auto;
+  margin-top: 1.8vw;
+  margin-left: 3vw;
+}
+.nome_palestrante_linkedin_icone a {
+  display: inline-block;
+  margin: 0;
+} 
+.instagram_div {
+  border-top:1px solid rgba(74, 144, 226, 0.5);;
+  border-bottom:1px solid rgba(74, 144, 226, 0.5);; 
+
+  box-shadow: inset 0 0px 0px #53a1e066;
+  border-radius: 0vw;
+  margin-top: 0em;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 1vw;
+}
+
+.instagram_div img {
+  vertical-align: center;
+  margin-top: 0vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: auto;
+  width: 6vw;
+}
+
+.instagram_div p {
+  color: #a8bdd4;
+  margin-top: 3.5vw;
+  text-align: center;
+  font-size: 5vw;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.instagram_div a {
+  text-decoration: none;
+  margin:0;
+  padding: 0;
+}
+#ver_palestra{
+  display:block;
+}
+
+.cronograma_mobile{
+  display: block;
+}
+
+#voltar_cronograma{
+  display:none;
+}
+#cronograma_desktop{
+  display:none;
+}
+#h2_hide{
+  display:none;
+}
+#pre_evento{
+  display:none;
+}
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2em; /* Adjust font size for medium screens */
+  }
+
+  ul {
+    padding-left: 40px;
+  }
+
+  p {
+    font-size: 1.5em;
+    letter-spacing: 0.8px;
+  }
+  button {
+    font-size: 1.2em; /* Adjust font size for medium screens */
+    }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores h2 {
+    font-size: 2.6em;
+  }
+  .lang-switcher {
+    top: 7px; /* Increase spacing on larger screens */
+    right: 7px;
+    font-size: 14px; /* Slightly larger text */
+    padding: 3px 7px;
+  }
+
+  
+.palestrantes {
+  padding: 0 5vw;
+}
+.palestrantes h2 {
+  font-size: 3.5em;
+}
+.palestrantes h3 {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.palestrantes p {
+  margin: .5em;
+  font-size: 2vw;
+}
+
+.palestrante-card {
+  flex-direction: column;
+  border: 0px inset #8a7242;
+  /* background: linear-gradient(to bottom, #191d2999 40%, #131314 70%); */
+  box-shadow: inset 0 0 3px #ecc06866;
+}
+.palestrante-card img {
+  margin-right: 0;
+}
+.info-palestrante {
+  padding: 0;
+  padding-top: 1vw;
+}
+.palestrante-name-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.palestrante-photo {
+  width: 100%;
+  max-width: 40em;
+  height: auto;
+  object-fit: cover;
+}	
+
+.organizador p {
+    margin: 0; /* Removes default margins to ensure proper alignment */
+    line-height: 1.5; /* Adjusts the line height to center text better */
+}
+
+.linkedin {
+    margin: 0; /* Adds space between the text and icon */
+    margin-top: .5em;
+    margin-left: .4em;
+    width: 2.1em; /* Adjust size based on preference */
+    height: auto; /* Maintains aspect ratio */
+}
+.nome_palestrante_linkedin_icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+}
+.nome_palestrante_linkedin_icone img {
+  width: 5vw;
+  height: auto;
+  margin-top: .8vw;
+  margin-left: 1.2em;
+}
+.nome_palestrante_linkedin_icone a {
+  display: inline-block;
+  margin: 0;
+} 
+.instagram_div {
+  border-top:1px solid #576c92;
+  border-bottom:1px solid #576c92; 
+
+  box-shadow: inset 0 0px 0px #53a1e066;
+  border-radius: 0vw;
+  margin-top: 0em;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 1vw;
+}
+
+.instagram_div img {
+  vertical-align: center;
+  margin-top: 0vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: auto;
+  width: 4vw;
+}
+
+.instagram_div p {
+  color: #a8bdd4;
+  margin-top: 1.5vw;
+  text-align: center;
+  font-size: 3vw;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.instagram_div a {
+  text-decoration: none;
+  margin:0;
+  padding: 0;
+}
+#ver_palestra{
+  display:block;
+}
+#cronograma_desktop{
+  display:none;
+}
+#cronograma_desktop_sabado{
+  display:none;
+}
+.cronograma_mobile{
+  display: block;
+}
+
+#voltar_cronograma{
+  display:none;
+}
+#h2_hide{
+  display:none;
+}
+#pre_evento{
+  display:none;
+}
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 2.5em; /* Adjust font size for large screens */
+  }
+
+  ul {
+    padding-left: 60px;
+  }
+
+  p {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+
+  }
+  button {
+    font-size: 1.5em; /* Adjust font size for large screens */
+    }
+  #fale-conosco {
+    font-size: 0.5em;
+  }
+  #organizadores h2 {
+    font-size: 3em;
+  }
+  .lang-switcher {
+    top: 10px; /* Increase spacing on larger screens */
+    right: 10px;
+    font-size: 20px; /* Slightly larger text */
+    padding: 5px 10px;
+  }
+  .organizador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+    background-color: #2c2c2c;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: calc(50% - 20px); /* Ensures each item takes up half of the container */
+    box-sizing: border-box; /* Includes padding and borders in width calculations */
+    margin-bottom: 1px; /* Optional: adds spacing between rows */
+  }
+  .organizadores-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the items to wrap */
+    gap: 5px; /* Space between items */
+    justify-content: center; /* Centers items in the middle */
+  }
+  .organizador p {
+    margin: 0; /* Removes default margins to ensure proper alignment */
+    line-height: 1.5; /* Adjusts the line height to center text better */
+}
+
+.palestrantes {
+  padding: 0 4em;
+}
+.palestrantes h2 {
+  font-size: 3.5em;
+}
+.palestrantes h3 {
+  font-size: 3.5vw;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+.palestrantes p {
+  margin: .5em;
+  font-size: 1.5vw;
+}
+.palestrante-card {
+  flex-direction: column;
+}
+.palestrante-card img {
+  margin-right: 0;
+}
+.info-palestrante {
+  padding: 1vw 3vw;
+}
+.palestrante-name-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.palestrante-photo {
+  max-width: none;
+  min-width: 30em;
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+}	
+#organizadores h2{
+  font-size: 4em;
+}
+.organizador {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: .8em;
+  background-color: #2c2c2c;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: calc(50% - 20px); /* Ensures each item takes up half of the container */
+  box-sizing: border-box; /* Includes padding and borders in width calculations */
+  margin-bottom: 1px; /* Optional: adds spacing between rows */
+}
+.organizadores-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap; /* Allows the items to wrap */
+  gap: 5px; /* Space between items */
+  justify-content:center; /* Centers items in the middle */
+}
+.organizador p {
+  margin: 0; /* Removes default margins to ensure proper alignment */
+  line-height: 1.5; /* Adjusts the line height to center text better */
+}
+
+.linkedin {
+    margin: 0; /* Adds space between the text and icon */
+    margin-top: .5em;
+    margin-left: .4em;
+    width: 3em; /* Adjust size based on preference */
+    height: auto; /* Maintains aspect ratio */
+}
+.nome_palestrante_linkedin_icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+}
+.nome_palestrante_linkedin_icone img {
+  width: 4vw;
+  height: auto;
+  margin-top: 1vw;
+  margin-left: 1.2em;
+}
+.nome_palestrante_linkedin_icone a {
+  display: inline-block;
+  margin: 0;
+}
+.instagram_div {
+  border-top:1px solid rgba(74, 144, 226, 0.5);
+  border-bottom:1px solid rgba(74, 144, 226, 0.5);; 
+
+  box-shadow: inset 0 0px 0px #53a1e066;
+  border-radius: 0vw;
+  margin-top: 0em;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 1vw;
+}
+
+.instagram_div img {
+  vertical-align: center;
+  margin-top: 0vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  height: auto;
+  width: 4vw;
+}
+
+.instagram_div p {
+  color: #a8bdd4;
+  margin-top: 1.5vw;
+  text-align: center;
+  font-size: 3vw;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.instagram_div a {
+  text-decoration: none;
+  margin:0;
+  padding: 0;
+}
+
+#cronograma_desktop{
+  display:none;
+}
+#cronograma_desktop_sabado{
+  display:none;
+}
+#ver_palestra{
+  display:block;
+}
+
+.cronograma_mobile{
+  display: block;
+}
+
+#voltar_cronograma{
+  display:none;
+}
+#h2_hide{
+  display:none;
+}
+#pre_evento{
+  display:none;
+}
+}
+
+
+@media (min-width: 1440px) {
+  body {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 3em; /* Adjust font size for extra large screens */
+  }
+
+
+  ul {
+    padding-left: 80px;
+  }
+
+  p {
+    font-size: 2.5em;
+    letter-spacing: 1.1px;
+  }
+  button {
+    font-size: 2em; /* Adjust font size for extra large screens */
+    }
+  #fale-conosco {
+    font-size: 0.6em;
+  }
+  .palestrantes {
+    padding: 0 6vw;
+  }
+  .palestrantes h3 {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  .palestrante-photo {
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+  }	
+  .nome_palestrante_linkedin_icone img {
+    width: 3vw;
+    height: auto;
+    margin-top: .87em;
+    margin-left: 1.2em;
+  }
+
+  #organizadores h2{
+    font-size: 4em;
+  }
+  .organizador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: .8em;
+    background-color: #2c2c2c;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: calc(50% - 20px); /* Ensures each item takes up half of the container */
+    box-sizing: border-box; /* Includes padding and borders in width calculations */
+    margin-bottom: 1px; /* Optional: adds spacing between rows */
+  }
+  .organizadores-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap; /* Allows the items to wrap */
+    gap: 5px; /* Space between items */
+    justify-content:center; /* Centers items in the middle */
+  }
+  .organizador p {
+    margin: 0; /* Removes default margins to ensure proper alignment */
+    line-height: 1.5; /* Adjusts the line height to center text better */
+}
+
+  .linkedin {
+      margin: 0; /* Adds space between the text and icon */
+      margin-top: .5em;
+      margin-left: .5em;
+      width: 4em; /* Adjust size based on preference */
+      height: auto; /* Maintains aspect ratio */
+  }
+
+  .nome_palestrante_linkedin_icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+  }
+  .nome_palestrante_linkedin_icone img {
+    width: 3.5vw;
+    height: auto;
+    margin-top: .6vw;
+    margin-left: 1.2em;
+  }
+  .nome_palestrante_linkedin_icone a {
+    display: inline-block;
+    margin: 0;
+  }
+  .instagram_div {
+    border-top:1px solid rgba(74, 144, 226, 0.5);;
+    border-bottom:1px solid rgba(74, 144, 226, 0.5);; 
+  
+    box-shadow: inset 0 0px 0px #53a1e066;
+    border-radius: 0vw;
+    margin-top: 0em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 1vw;
+  }
+  
+  .instagram_div img {
+    vertical-align: center;
+    margin-top: 0vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    height: auto;
+    width: 4vw;
+  }
+  
+  .instagram_div p {
+    color: #a8bdd4;
+    margin-top: 1.5vw;
+    text-align: center;
+    font-size: 2.4vw;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  .instagram_div a {
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+  }
+
+  #cronograma_desktop{
+    display:grid;
+  }
+
+  #cronograma_desktop_sabado{
+    display:grid;
+  }
+  #ver_palestra{
+    display:none;
+  }
+
+  .cronograma_mobile{
+    display: none;
+  }
+
+  #voltar_cronograma{
+    display:block;
+    text-align: center;
+  }
+  
+.cronograma_mobile{
+  padding:0
+}
+
+
+
+.cronograma_desktop_sabado{
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  border-right: 1px solid rgba(74, 75, 80, 0.5);
+  margin-top:1vw;
+  margin-bottom:1vw;
+  padding: 0vw 0vw;
+  
+}
+.cronograma_desktop_sabado h3{
+  font-size: 1.5vw;
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  border-left: 8px solid #44648d;
+  border-top: 1px solid #384052;
+  border-bottom: 1px solid #384052;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 100%;
+  text-align: center;
+  padding: 3.5vw 0;
+}
+
+
+.cronograma_desktop_sabado .palestra-card {
+  margin: 0vw;
+  border: 0;
+  border-left: 1px solid #384052;
+  border-top: 1px solid #384052;
+  border-bottom: 1px solid #384052;
+  
+  height: 100%;
+}
+
+.cronograma_desktop_sabado .palestra-card h5 {
+  font-size: 1.5rem; /* Smaller heading for talks */
+  margin-bottom: .5rem;
+
+} 
+.cronograma_desktop_sabado .palestra-card.smaller_h5 h5 {
+  font-size: 1.3rem; /* Smaller heading for talks */
+  margin-bottom: .5rem;
+
+} 
+.cronograma_desktop h3 {
+  border-top: 1px solid #384052;
+  text-align: center;
+  font-size: 1.3vw; /* Smaller heading for talks */
+  margin-bottom: 0rem;
+  box-shadow: inset 0 0 0px 0px #d5dadf66;
+  border-bottom: 1px solid #384052;
+  padding: 5vw 1vw;
+  border-radius: 0px;
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  border-left: 8px solid #44648d;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 1px solid #384052;
+}
+
+.cronograma_desktop_sabado .palestra-card p {
+  font-size: 0.9rem; /* Smaller text for talk times and names */
+}
+
+
+
+.cronograma_desktop {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr); /* 7 equal columns */
+  grid-template-columns: .8fr 1fr 1fr 1fr; /* 3 rows that auto-adjust their height based on content */
+  gap: 0px 0px; /* Space between the grid items */
+  grid-auto-flow: row;
+  border-bottom: 1px solid rgba(74, 75, 80, 0.5);
+  padding: 0vw 0vw;
+  padding-top: 0vw;
+  margin-top: 1vw;
+  /* background: linear-gradient(to bottom, #afbcc2, #3a5875, #31363a); */
+  border-radius: 0px;
+  /* border-bottom: 1px solid #f3f4f5; */
+  border-top: 1px solid rgba(74, 75, 80, 0.5);
+
+}
+/* Each day block */
+
+.cronograma_desktop_sabado.less_padding {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.less_padding.palestra-card{
+  padding: 2vw .5vw;
+  margin:.2vw;
+  border-radius: 1px;
+  border-top: 1px solid rgba(74, 75, 80, 0.5);
+}
+
+#less_padding_h3 {
+  padding: 4.5vw 2vw;
+  font-size: 1.6vw;
+  font-weight: normal;
+  border-radius: 5px;
+}
+.cronograma_desktop .palestra-card h5 {
+  font-size: 1.4rem; /* Smaller heading for talks */
+  margin-bottom: .5rem;
+
+}
+
+.cronograma_desktop .palestra-card {
+  flex-grow: 2; /* Allows cards to grow to the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content:center; /* Ensures content within is distributed evenly */
+  min-height: 200px; /* You can adjust this to control the minimum height */
+  padding: 0vw .5vw;
+  margin:0;
+  /* border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; */
+  border-right: 1px solid #384052;
+  border-top: 1px solid #384052;
+  border-left: 0px solid #f3f4f5;
+}
+
+.cronograma_desktop .palestra-card p {
+  font-size: 0.9rem; /* Smaller text for talk times and names */
+}
+.programacao_semana{
+  font-size:2.5vw;
+  margin-top: 2vw;
+  margin-bottom: 0;
+}
+#pre_evento{
+  display: block;
+  font-size:2.5vw;
+  margin-top: 6vw;
+  margin-bottom: 0;
+}
+#h2_hide{
+  display:block;
+}
+#pre_evento{
+  display:block;
+}
+
+.palestra-card {
+  background: radial-gradient(circle, rgba(7, 20, 36, 1) 20%, #17263a 100%);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1vw 0;
+  margin-bottom: 0;
+  border-radius: 0px;
+  
+}
+
+.palestra-card.change_color{
+  background: radial-gradient(circle, rgb(12, 33, 59) 20%, #223349 100%);
+}
+
+h3.change_color{
+  background: radial-gradient(circle, rgb(12, 33, 59) 20%, #223349 100%);
+}
+  
+}
+
+@media (min-width: 1600px) {
+  #ver_palestra {
+    text-align:left;
+  }
+
+  .palestrantes {
+    margin: 0;
+    padding: 0;
+  }
+  .palestrantes h2 {
+    font-size: 4em;
+    
+  }
+  .palestrantes h3 {
+    font-size: 3.2em;
+    text-align: left;
+    font-style: italic;
+    margin-left: .5em;
+  }
+  .palestrantes p {
+    text-align: left;
+    margin: 1em;
+    font-size: 1.5em;
+  }
+  .palestrante-card {
+    flex-direction: row;
+    padding:1em;
+    border: 0px inset #8a7242;
+    background: linear-gradient(to right, #1b2133 10%, #131314 40%);
+    /* box-shadow: inset 0 0 5px #fabc5e66; */
+    /* box-shadow: inset 0 0 3px #ecc06866; */
+  }
+  .palestrante-name-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .palestrante-photo {
+    width: 30em;
+    height: auto;
+    object-fit: cover;
+    /* box-shadow: 0px 0px 5px 1px #139dd333; */
+  }
+  .nome_palestrante_linkedin_icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 1em;
+  }
+  .nome_palestrante_linkedin_icone {
+    display: flex;
+    flex-direction: row;
+  }
+  .nome_palestrante_linkedin_icone img {
+    width: 3.8em;
+    height: auto;
+    margin-top: .8em;
+    margin-left: 1.2em;
+  }
+  .nome_palestrante_linkedin_icone a {
+    display: inline-block;
+    margin: 0;
+  }
+  .instagram_div {
+    border-top:1px inset #5c8adf;
+    border-bottom:1px inset #5c8adf; 
+  
+    box-shadow: inset 0 0px 0px #53a1e066;
+    border-radius: 0vw;
+    margin-top: 3vw;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 1vw;
+  }
+  
+  .instagram_div img {
+    vertical-align: center;
+    margin-top: 0vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    height: auto;
+    width: 4vw;
+  }
+  
+  .instagram_div p {
+    color: #a8bdd4;
+    margin-top: 1.5vw;
+    text-align: center;
+    font-size: 2.4vw;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+  .instagram_div a {
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+  }
+  #voltar_cronograma{
+    text-align:left;
+  }
+  
+}
+
+.palestrantes{
+  margin-top: 5vw;
+}
+#ver_palestra a{
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+  color:#615b4a;
+  box-shadow: inset 0 0 1px 1px #524d2f;
+  border-radius: 5px;
+  padding:clamp(.5em, 1vw, .5em);
+  
+}
+#voltar_cronograma  a{
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: lighter;
+  font-style: italic;
+  color:#4a5561;
+  box-shadow: inset 0 0 1px 1px #3c3f4d;
+  border-radius: 5px;
+  padding:clamp(.5em, 1vw, .5em);
+  
+}
+#voltar_cronograma {
+  margin-top:clamp(1px, 4vw, 1em);
+
+}
+#voltar_cronograma a:hover{
+  color:#62839e;
+  box-shadow: inset 0 0 1px 1px #62839e;
+}
+#ver_palestra a:hover{
+  color:#9e9062;
+  
+}
+
+#ver_palestra {
+  margin-top:clamp(1px, 4vw, 1em);
+
+}
+.palestrante-card p {
+  margin-top:.5vw;
+}
+
+
+
+.palestrante-card .bio{
+  margin-bottom: .4vw;
+}
+
+
+
+.palestra-card.highlight {
+  box-shadow: inset 0 0 0px 5px #f5be0866;
+}
+
+/* #organizadores {
+  padding: 40px 20px;
+  text-align: center;
+} */
+
+/* --- Added for the 2026 edition --- */
+
+.hero-2026 {
+  width: 100%;
+  padding: 8vw 5% 6vw;
+  text-align: center;
+  background: linear-gradient(180deg, #23283d 0%, #1e1e1e 100%);
+  border-radius: 10px;
+}
+
+.hero-2026 .hero-eyebrow {
+  color: #4a90e2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.hero-2026 h1 {
+  font-size: clamp(2em, 6vw, 3.4em);
+  margin-bottom: 12px;
+}
+
+.hero-2026 .hero-data {
+  color: #ffffff;
+  font-style: italic;
+  font-size: clamp(1.1em, 3vw, 1.5em);
+}
+
+.placeholder-box {
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px 20px;
+  color: #ffffff;
+  border: 1px dashed rgba(74, 144, 226, 0.6);
+  border-radius: 10px;
+  background: rgba(74, 144, 226, 0.06);
+}
+
+.placeholder-box h2 {
+  margin-bottom: 14px;
+}
+
+.placeholder-box p {
+  margin-bottom: 10px;
+}
+
+.placeholder-box .placeholder-tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(245, 190, 8, 0.15);
+  color: #f5be08;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
