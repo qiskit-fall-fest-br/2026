@@ -1603,4 +1603,270 @@ h3.change_color{
   letter-spacing: 1px;
 }
 
+/* --- Ligas parceiras (2026) --- */
+
+.ligas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 20px 0 30px;
+}
+
+.liga-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66;
+  border-radius: 10px;
+  padding: 24px 20px;
+}
+
+.liga-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  background: #ffffff;
+}
+
+.liga-card h3 {
+  color: #ffffff;
+  font-size: 1.15em;
+  margin-bottom: 10px;
+}
+
+.liga-card .liga-desc {
+  font-size: 0.92em;
+  margin-bottom: 14px;
+}
+
+.liga-card .liga-encontro {
+  font-size: 0.85em;
+  color: #c9d6f0;
+  border-top: 1px solid rgba(74, 144, 226, 0.35);
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.liga-card .liga-encontro strong {
+  color: #4a90e2;
+}
+
+/* --- Cronograma 2026 (independente do .cronograma_mobile legado,
+   que fica escondido acima de 1440px) --- */
+
+.cronograma-2026 {
+  margin: 20px 0 30px;
+}
+
+.semana-bloco {
+  margin-bottom: 28px;
+}
+
+.semana-bloco h3 {
+  color: #4a90e2;
+  font-size: 1.25em;
+  margin-bottom: 6px;
+}
+
+.semana-bloco .semana-info {
+  font-size: 0.9em;
+  color: #c9d6f0;
+  margin-bottom: 16px;
+}
+
+.dia-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+
+.dia-card .dia-data {
+  color: #4a90e2;
+  font-weight: 700;
+  min-width: 150px;
+}
+
+.dia-card .dia-tema {
+  flex: 1 1 220px;
+}
+
+.dia-card .dia-palestrante {
+  font-size: 0.9em;
+  color: #c9d6f0;
+  width: 100%;
+}
+
+.dia-card .dia-palestrante a {
+  color: #4a90e2;
+}
+
+.dia-card .a-confirmar {
+  font-style: italic;
+  opacity: 0.75;
+}
+
+.dia-multi {
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+
+.dia-multi h4 {
+  color: #4a90e2;
+  font-size: 1.05em;
+  margin-bottom: 8px;
+}
+
+.dia-itens {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.dia-itens li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  padding: 5px 0;
+  border-top: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.dia-itens li:first-child {
+  border-top: none;
+}
+
+.dia-itens .item-hora {
+  color: #4a90e2;
+  font-weight: 700;
+  min-width: 90px;
+}
+
+.dia-itens .item-tema {
+  flex: 1 1 220px;
+}
+
+.dia-itens .item-tema a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.dia-itens .item-subtitulo {
+  display: block;
+  font-size: 0.85em;
+  color: #c9d6f0;
+  font-style: italic;
+}
+
+/* ===== Visual refresh: brand badge, bird illustrations, tag pills ===== */
+
+#imagem-evento .brand-badge {
+  width: 84px;
+  height: 84px;
+  max-width: 84px;
+  display: block;
+  margin: 0 auto 14px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+.hero-2026 {
+  position: relative;
+  overflow: visible;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+#imagem-evento .hero-tags img {
+  height: 24px;
+  max-width: none;
+  width: auto;
+  opacity: 0.95;
+}
+
+.bird-sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
+}
+
+#imagem-evento .bird-sticker img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.bird-sticker--flamingo {
+  width: clamp(64px, 9vw, 130px);
+  top: -14px;
+  left: -8px;
+  transform: rotate(-8deg);
+}
+
+.bird-sticker--blue {
+  width: clamp(54px, 7vw, 108px);
+  bottom: -14px;
+  right: 3%;
+  transform: rotate(6deg);
+}
+
+@media (max-width: 600px) {
+  .bird-sticker--flamingo,
+  .bird-sticker--blue {
+    display: none;
+  }
+}
+
+.section-sticker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.section-sticker img {
+  width: 72px;
+  height: 72px;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+}
+
+.poster-showcase {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 34px;
+}
+
+.poster-showcase .poster-frame {
+  width: 100%;
+  max-width: 760px;
+  padding: 10px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom, #252e4799 40%, #131314 70%);
+  box-shadow: inset 0 0 5px #fabc5e66, 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.poster-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
